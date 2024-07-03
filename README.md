@@ -1,43 +1,17 @@
+# Benchmark Project: Tortoise ORM vs SQLAlchemy
 
-# Benchmark Project
+This project compares the performance of Tortoise ORM and SQLAlchemy in Python for basic database operations, including inserts, reads, updates, and deletes. The results are compared to determine the best ORM for each operation.
 
-Questo progetto confronta le performance di Tortoise ORM e SQLAlchemy in Python per operazioni di base sul database.
+## Project Structure
 
-## Struttura del Progetto
+- `main.py`: Main script to run the benchmarks and compare the results.
+- `requirements.txt`: Dependencies file.
+- `README.md`: Project documentation.
 
-- `tortoise_benchmark.py`: Script per il benchmark di Tortoise ORM.
-- `sqlalchemy_benchmark.py`: Script per il benchmark di SQLAlchemy.
-- `requirements.txt`: File delle dipendenze.
-- `README.md`: Documentazione del progetto.
+## Dependencies
 
-## Istruzioni per l'Utilizzo
+To install the required dependencies, use:
 
-1. Crea un ambiente virtuale:
-    ```bash
-    python -m venv venv
-    ```
-
-2. Attiva l'ambiente virtuale:
-    - Su macOS/Linux:
-        ```bash
-        source venv/bin/activate
-        ```
-    - Su Windows:
-        ```bash
-        .\venv\Scripts\activate
-        ```
-
-3. Installa le dipendenze:
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-4. Esegui i benchmark:
-    - Per Tortoise ORM:
-        ```bash
-        python tortoise_benchmark.py
-        ```
-    - Per SQLAlchemy:
-        ```bash
-        python sqlalchemy_benchmark.py
-        ```
+```bash
+pip install -r requirements.txt
+```
