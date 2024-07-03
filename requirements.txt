@@ -1,0 +1,4 @@
+
+tortoise-orm==0.17.8
+aiosqlite==0.17.0
+sqlalchemy==2.0.17
