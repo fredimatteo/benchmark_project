@@ -3,7 +3,7 @@ import asyncio
 from tortoise import Tortoise, fields
 from tortoise.models import Model
 from sqlalchemy import create_engine, Column, Integer, String, ForeignKey
-from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import declarative_base
 from sqlalchemy.orm import relationship, sessionmaker
 
 
@@ -168,4 +168,5 @@ def compare_results(tortoise_results, sqlalchemy_results):
 comparison = compare_results(tortoise_result, alchemy_result)
 
 for k, v in comparison.items():
-    print(f'{k}: {v}')
+    print(f'{k}:\n{v}')
+    print('')
